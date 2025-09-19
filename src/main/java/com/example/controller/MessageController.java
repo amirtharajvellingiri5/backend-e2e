@@ -1,7 +1,11 @@
-package com.example.demo.controller;
+package com.example.controller;
 
-import com.example.demo.kafka.KafkaProducerService;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.service.KafkaProducerService;
 
 @RestController
 @RequestMapping("/messages")
